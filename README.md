@@ -5,7 +5,7 @@ Work with a partner to complete the tasks included in the Exercise09.pdf. Submit
 
 ## Helpful Links
 - Rosetta Code: http://www.rosettacode.org/wiki/Rosetta_Code
-- If…else statement: https://www.datamentor.io/r-programming/if-else-statement/
+- If…else statements: https://www.datamentor.io/r-programming/if-else-statement/
 - Creating functions: https://swcarpentry.github.io/r-novice-inflammation/02-func-R/
 - Loops: https://swcarpentry.github.io/r-novice-inflammation/15-supp-loops-in-depth/
 - Indexing: https://rspatial.org/intr/4-indexing.html
