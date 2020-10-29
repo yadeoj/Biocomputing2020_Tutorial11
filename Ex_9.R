@@ -7,7 +7,7 @@ dir <- readline(prompt = "What directory are we in? ")
 
 file_names <- c(list.files(dir))
 
-#Pre-making a vector before looping
+#Pre-making vectors
 
 values <- c()
   
@@ -17,7 +17,11 @@ for (i in 1:length(file_names)) {
   
   #Reading in the data for one of the files
   
-  data <- read.csv(paste(dir, "/", file_names[i], sep = ""))
+  data <- read.csv(paste(dir, "/", file_names[i], sep = ""), header = TRUE )
+  
+  #Removing NA's in the data
+  
+  data <- data[complete.cases(data),]
   
   #Checking the number of Observations and if there is no data at all (no columns)
   
@@ -44,7 +48,7 @@ for (i in 1:length(file_names)) {
   
   #Asking for the column name of the wanted file
   
-  print(paste("Here are the column names for ", file_names[i], ":", sep = "" ))
+  print(paste("Here are the column names for ", file_names[i], ":", sep = ""))
   
   print(colnames(data))
   
@@ -64,5 +68,4 @@ print("The vector containing the coefficients of variation is: ")
 values<- values[!is.na(values)]
 
 values
-
 
