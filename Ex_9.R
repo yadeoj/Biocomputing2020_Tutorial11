@@ -7,7 +7,7 @@ dir <- readline(prompt = "What directory are we in? ")
 
 file_names <- c(list.files(dir))
 
-#Pre-making vectors
+#Pre-making a vector before looping
 
 values <- c()
   
