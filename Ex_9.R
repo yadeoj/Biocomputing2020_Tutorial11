@@ -46,7 +46,7 @@ for (i in 1:length(file_names)) {
     
   }
   
-  #Asking for the column name of the wanted file
+  #Asking for the column name of the current file
   
   print(paste("Here are the column names for ", file_names[i], ":", sep = ""))
   
